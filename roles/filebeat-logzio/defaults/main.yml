@@ -6,10 +6,10 @@ filebeat_prospectors:
     paths:
       - "/var/log/*.log"
     fields:
-     logzio_codec: plain
-     token: token
+      logzio_codec: plain
+      token: token
     files_under_root: true
-    ignore_older: 3h   
+    ignore_older: 3h
 
 filebeat_output_elasticsearch_enabled: false
 filebeat_output_elasticsearch_hosts:
